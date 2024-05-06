@@ -4,15 +4,15 @@
 #include <iostream>
 using namespace std;
 
-template <typename TYPE>
-TYPE TriangleArea(TYPE bottom, TYPE height)
+template <typename TYPE_A, typename TYPE_B>
+double TriangleArea(TYPE_A bottom, TYPE_B height)
 {
 	return (bottom * height) / 2;
 }
 
 int main()
 {
-	int bottom, height;
+	double bottom, height;
 
 	cout << "底辺を入力　＞　" << flush;
 	cin >> bottom;
